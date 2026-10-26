@@ -1,0 +1,30 @@
+{
+  "name": "prism-markdown-table",
+  "version": "1.0.0",
+  "description": "Convert CSV, spreadsheet, JSON and Markdown tables both ways with an editable grid, alignment and sorting.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "markdown",
+    "markdown-table",
+    "csv",
+    "csv-to-markdown",
+    "json",
+    "readme",
+    "developer-tools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-markdown-table.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-markdown-table/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

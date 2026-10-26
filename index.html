@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Markdown Table · Prism Protocol</title>
+  <meta name="description" content="Convert CSV, spreadsheet, JSON and Markdown tables both ways with an editable grid, alignment and sorting." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Markdown Table · Prism Protocol" />
+  <meta property="og:description" content="Convert CSV, spreadsheet, JSON and Markdown tables both ways with an editable grid, alignment and sorting." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#00D2FF;--accent-2:#F5C561}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Markdown Table</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-markdown-table" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">📊 Dev Tools</p>
+      <h1>Tables for READMEs, <em>without the pain.</em></h1>
+      <p class="lead">Paste CSV, Excel/Sheets data, JSON or Markdown and get a perfectly aligned Markdown table. Edit cells, sort, align and export.</p>
+    </section>
+    <section class="grid g2 mt-io">
+      <div class="card">
+        <div class="card-title"><h2>Input</h2><div class="row"><span class="pill acc" id="fmt"></span><button class="btn small" id="sample">Sample</button></div></div>
+        <textarea id="input" spellcheck="false" aria-label="Table input" placeholder="Paste CSV, TSV (from Excel/Sheets), JSON or a Markdown table"></textarea>
+      </div>
+      <div class="card">
+        <div class="card-title"><div class="tabs" id="out"><button class="on" data-v="md">Markdown</button><button data-v="csv">CSV</button><button data-v="json">JSON</button><button data-v="html">HTML</button></div>
+          <div class="row"><label class="check"><input type="checkbox" id="pretty" checked /> Align</label><button class="btn small primary" id="copy">Copy</button></div></div>
+        <pre class="out res" id="res"></pre>
+      </div>
+    </section>
+    <section class="card editor">
+      <div class="card-title"><h2>Edit the table</h2><div class="row"><button class="btn small" id="addRow">+ Row</button><button class="btn small" id="addCol">+ Column</button><button class="btn small" id="tr">Transpose</button><button class="btn small ghost" id="clear">Clear</button></div></div>
+      <div class="grid-wrap"><table class="edit" id="grid"></table></div>
+      <p class="muted small">Click a header's arrows to set alignment or sort. Cells are editable.</p>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Markdown Table · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-markdown-table" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
